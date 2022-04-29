@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Temperatura</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Flash Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+	<meta name="keywords"
+		content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, Flash Able, Flash Able bootstrap admin template">
+	<meta name="author" content="Codedthemes" />
+
+	<!-- Favicon icon -->
+	<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+	<!-- fontawesome icon -->
+	<link rel="stylesheet" href="/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="/assets/plugins/animation/css/animate.min.css">
+
+	<!-- vendor css -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="">
+	<!-- [ Pre-loader ] start -->
+	<!-- <div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div> -->
+	
+	<nav class="pcoded-navbar menupos-fixed menu-light brand-blue ">
+		<div class="navbar-wrapper ">
+			<div class="navbar-brand header-logo">
+				<a href="/home2" class="b-brand">
+					
+					<h3 class="m-b-0 text-white">SENSOR BOX</h3>
+				</a>
+				
+			</div>
+			<div class="navbar-content scroll-div">
+				<ul class="nav pcoded-inner-navbar">
+					<li class="nav-item pcoded-menu-caption">
+						<label>Navegacion</label>
+					</li>
+					<li class="nav-item">
+						<a href="/home2" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Home</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Home</label>
+					</li>
+					
+					<!-- Sensores -->
+					<li class="nav-item">
+						<a href="/temperatura" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-temperature-high"></i></span><span class="pcoded-mtext">Temperatura</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/humedad" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-water"></i></span><span class="pcoded-mtext">Humedad</span></a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/ultrasonico" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-hand-holding"></i></span><span class="pcoded-mtext">Ultrasonico</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/precensia" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-person-booth"></i></span><span class="pcoded-mtext">Presencia</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/gas" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-fire"></i></span><span class="pcoded-mtext">Gas</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/humo" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-smoking"></i></span><span class="pcoded-mtext">Humo</span></a>
+					</li>
+
+					<li class="nav-item pcoded-menu-caption">
+						<label>Informacion</label>
+					</li>
+					<li class="nav-item">
+						<a href="/movil" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-mobile"></i></span><span class="pcoded-mtext">APP MOVIL</span></a>
+					</li>
+					
+					
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+		<div class="m-header">
+			<a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+			<a href="/main2" class="b-brand">
+			
+			</a>
+		</div>
+		<a class="mobile-menu" id="mobile-header" href="#!">
+			<i class="feather icon-more-horizontal"></i>
+		</a>
+		<div class="collapse navbar-collapse">
+			
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<div class="dropdown drp-user">
+						<a class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon feather icon-settings"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-notification">
+							<div class="pro-head">
+								<img src="/assets/images/user/user.png" class="img-radius" alt="User-Profile-Image">
+								<!-- <span></span> -->
+								
+								<!-- <tbody *ngFor="let pre of usuario"> -->
+									<span>Cerrar Sesion</span>
+								<!-- </tbody> -->
+									
+							
+								<a  class="dud-logout" title="Logout" (click)="logout()">
+									<i class="feather icon-log-out"></i>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="pcoded-main-container">
+		<div class="pcoded-wrapper">
+			<div class="pcoded-content">
+				<div class="pcoded-inner-content">
+					<div class="main-body">
+						<div class="page-wrapper">
+							
+							<div class="page-header">
+								<div class="page-block">
+									<div class="row align-items-center">
+										<div class="col-md-12">
+											<div class="page-header-title">
+												<h5>Materias</h5>
+											</div>
+											<ul class="breadcrumb">
+												<li class="breadcrumb-item"><a href="/home2"><i class="feather icon-home"></i></a></li>
+												<li class="breadcrumb-item"><a>Implementacion</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+              <div class="col-sm-12">
+                <h5 class="mt-4">UTT</h5>
+                <hr>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ANGULAR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">MONGO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">XCODE</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <p class="mb-0">
+                      Angular es un Framework de JavaScript de código abierto escrito en TypeScript. Su objetivo principal es desarrollar aplicaciones de una sola página. Google se encarga del mantenimiento
+                       y constantes actualizaciones de mejoras para este framework.
+                       En concreto, en el desarrollo de software, un framework es una estructura de soporte conceptual y tecnológica definida, generalmente, con artefactos o módulos de software específicos, que pueden servir como base para la organización y desarrollo de software.
+
+Es decir, un framework es una especie de plantilla, esquema o estructura conceptual basada en tecnología que permite trabajar de una forma mucho más sencilla. De esta forma, se evitan posibles errores de programación.
+
+Por tanto, un marco es un conjunto de herramientas y módulos que se pueden reutilizar para diferentes proyectos. Facilitando en varios aspectos el desarrollo, mejorando el tiempo, esfuerzo, organización.
+                    </p>
+					
+                    <img src="/assets/images/user/angular.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <p class="mb-0"> MongoDB es la más representativa de las bases de datos conocidas como NoSQL, acrónimo de Not only SQL. También podemos denominarla con el término de base de datos documental, ya que lo que almacenamos son puros documentos JSON y no registros, como sucede en las tablas de las bases de datos relacionales.
+
+
+                      Las bases de datos NoSQL vienen a ocupar una parcela específica entre las soluciones de base de datos actuales. Resuelven necesidades habituales, tanto aplicaciones web, apps móviles o en el Internet de las Cosas. Pero no se puede decir que se adapten a todo tipo de proyectos. En general, podemos encontrar de utilidad una base de datos NoSQL cuando nuestras necesidades son las siguientes, conocidas como las «3V».
+                      
+                      Velocidad. Si una aplicación necesita almacenar o acceder a mucha información en poco tiempo, se necesita una base de datos que aporte gran velocidad. Las bases de datos documentales son capaces de ser mucho más rápidas que las relacionales, pudiendo atender clientes que necesiten realizar muchas operaciones por segundo.
+                    </p>
+                    <img src="/assets/images/user/mongo.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <p class="mb-0">
+                      Xcode es un entorno de desarrollo integrado, o IDE para abreviar, que existe específicamente para escribir programas para varios sistemas operativos de Apple. Actualmente, Xcode solo está disponible para computadoras Mac.
+
+Con el IDE Xcode, los desarrolladores pueden escribir software para macOS (en adelante: Mac OS), iOS, watchOS y tvOS. Por lo tanto, sirve como plataforma para todos los sistemas operativos relevantes actualmente que se utilizan en los dispositivos Apple.
+
+Xcode está dirigido principalmente a desarrolladores que quieran escribir programas para los sistemas operativos mencionados con Objective-C o el más moderno Swift. Al mismo tiempo, sin embargo, se admiten lenguajes más generales como C y C ++, así como JavaScript y Ruby.
+                    </p>
+                    <img src="/assets/images/user/xcode.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              
+              
+             
+      
+    
+  
+
+
+
+					
+						
+
+</div>
+      </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

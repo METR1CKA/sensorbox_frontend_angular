@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Ultrasonico</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Flash Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+	<meta name="keywords"
+		content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, Flash Able, Flash Able bootstrap admin template">
+	<meta name="author" content="Codedthemes" />
+
+	<!-- Favicon icon -->
+	<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+	<!-- fontawesome icon -->
+	<link rel="stylesheet" href="/assets/fonts/fontawesome/css/fontawesome-all.min.css">
+	<!-- animation css -->
+	<link rel="stylesheet" href="/assets/plugins/animation/css/animate.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/chart-morris/css/morris.css">
+	<!-- vendor css -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body class="">
+
+
+	<nav class="pcoded-navbar menupos-fixed menu-light brand-blue ">
+		<div class="navbar-wrapper ">
+			<div class="navbar-brand header-logo">
+				<a href="/home2" class="b-brand">
+
+					<h3 class="m-b-0 text-white">SENSOR BOX</h3>
+				</a>
+
+			</div>
+			<div class="navbar-content scroll-div">
+				<ul class="nav pcoded-inner-navbar">
+					<li class="nav-item pcoded-menu-caption">
+						<label>Navegacion</label>
+					</li>
+					<li class="nav-item">
+						<a href="/home2" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Home</span></a>
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Home</label>
+					</li>
+
+					<!-- Sensores -->
+					<li class="nav-item">
+						<a href="/temperatura" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-temperature-high"></i></span><span class="pcoded-mtext">Temperatura</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/humedad" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-water"></i></span><span class="pcoded-mtext">Humedad</span></a>
+					</li>
+
+					<li class="nav-item">
+						<a href="/ultrasonico" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-hand-holding"></i></span><span class="pcoded-mtext">Ultrasonico</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/precensia" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-person-booth"></i></span><span class="pcoded-mtext">Presencia</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/gas" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-fire"></i></span><span class="pcoded-mtext">Gas</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="/humo" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-smoking"></i></span><span class="pcoded-mtext">Humo</span></a>
+					</li>
+
+					<li class="nav-item pcoded-menu-caption">
+						<label>Informacion</label>
+					</li>
+					<li class="nav-item">
+						<a href="/movil" class="nav-link"><span class="pcoded-micon"><i class="fas fa-solid fa-mobile"></i></span><span class="pcoded-mtext">APP MOVIL</span></a>
+					</li>
+
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+		<div class="m-header">
+			<a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+			<a href="/home2" class="b-brand">
+				<img src="/assets/images/logo.svg" alt="" class="logo images">
+				<img src="/assets/images/logo-icon.svg" alt="" class="logo-thumb images">
+			</a>
+		</div>
+		<a class="mobile-menu" id="mobile-header" href="#!">
+			<i class="feather icon-more-horizontal"></i>
+		</a>
+		<div class="collapse navbar-collapse">
+
+			<ul class="navbar-nav ml-auto">
+				<li>
+					<div class="dropdown drp-user">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon feather icon-settings"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right profile-notification">
+							<div class="pro-head">
+								<img src="/assets/images/user/user.png" class="img-radius" alt="User-Profile-Image">
+								<span>Cerrar Sesion</span>
+								<a  class="dud-logout" title="Logout" (click)="logout()">
+									<i class="feather icon-log-out"></i>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="pcoded-main-container">
+		<div class="pcoded-wrapper">
+			<div class="pcoded-content">
+				<div class="pcoded-inner-content">
+					<div class="main-body">
+						<div class="page-wrapper">
+
+							<div class="page-header">
+								<div class="page-block">
+									<div class="row align-items-center">
+										<div class="col-md-12">
+											<div class="page-header-title">
+												<h5>Ultrasonico</h5>
+											</div>
+											<ul class="breadcrumb">
+												<li class="breadcrumb-item"><a href="/home2"><i class="feather icon-home"></i></a></li>
+												<li class="breadcrumb-item"><a>Analisis del Sensor de Ultrasonico</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+
+
+								<div class="col-xl-3 col-md-6">
+									<div class="card prod-p-card bg-c-red">
+										<div class="card-body">
+											<div class="row align-items-center m-b-25">
+												<div class="col">
+													<h6 class="m-b-5 text-white">Distancia mas cercano</h6>
+													<!--
+
+													 -->
+													 <tbody *ngFor="let baja of bajas">
+														<h3 class="m-b-0 text-white">{{baja.Baja | number }} CM</h3>
+													</tbody>
+
+
+												</div>
+												<div class="col-auto">
+													<i class="fas fa-solid fa-temperature-high text-c-blue f-18"></i>
+												</div>
+											</div>
+											<p class="m-b-0 text-white"><span class="label label-danger m-r-10">Hecho:</span>El 27 de agosto de 2003, Marte realizó su mayor acercamiento a la Tierra en aproximadamente 60 000 años, a tan solo 55,76 millones de kilómetros.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="card prod-p-card bg-c-blue">
+										<div class="card-body">
+											<div class="row align-items-center m-b-25">
+												<div class="col">
+													<h6 class="m-b-5 text-white">Distancia mas lejano</h6>
+													<tbody *ngFor="let alta of altas">
+														<h3 class="m-b-0 text-white">{{alta.Alta | number }} CM</h3>
+													</tbody>
+
+												</div>
+												<div class="col-auto">
+													<i class="fas fa-solid fa-temperature-low text-c-blue f-18"></i>
+
+
+
+												</div>
+											</div>
+											<p class="m-b-0 text-white"><span class="label label-primary m-r-10">Hecho:</span>El 27 de agosto de 2003, Marte realizó su mayor acercamiento a la Tierra en aproximadamente 60 000 años, a tan solo 55,76 millones de kilómetros.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-3 col-md-6">
+									<div class="card prod-p-card bg-c-yellow">
+										<div class="card-body">
+											<div class="row align-items-center m-b-25">
+												<div class="col">
+													<h6 class="m-b-5 text-white">Promedio:</h6>
+													<!-- <h3 class="m-b-0 text-white">----</h3> -->
+													<tbody *ngFor="let promedio of promedios">
+														<h3 class="m-b-0 text-white">{{promedio.Promedio | number }}</h3>
+													</tbody>
+												</div>
+												<div class="col-auto">
+													<i class="fas fa-arrow-alt-circle-down text-c-yellow f-18"></i>
+												</div>
+											</div>
+											<p class="m-b-0 text-white"><span class="label label-warning m-r-10">Hecho:</span>
+                                                El promedio es un número representativo que puede obtenerse a partir de una lista de cifras. Usualmente se relaciona con el concepto.</p>
+										</div>
+									</div>
+								</div>
+
+
+								<!-- sessions-section start -->
+								<div class="col-xl-8 col-md-6">
+									<div class="card table-card">
+										<div class="card-header">
+											<h5>Resultados encontrados del Sensor de Ultrasonico</h5>
+										</div>
+										<div class="card-body px-0 py-0">
+											<div class="table-responsive">
+												<div class="session-scroll" style="height:478px;position:relative;">
+													<table class="table table-hover m-b-0">
+														<thead>
+															<tr>
+																<!-- <th><span> <a><i class="fas fa-duotone fa-hashtag"></i> </a></span></th> -->
+																<th><span>Valor <a ><i class="fas fa-thin fa-arrow-down"></i></a></span></th>
+																<th><span>Fecha <a><i class="fas fa-regular fa-calendar"></i></a></span></th>
+																<th><span>Hora <a><i class="fas fa-regular fa-clock"></i></a></span></th>																<!-- <th><span>Borrar <a><i class="fas fa-solid fa-trash"></i></a></span></th> -->
+															</tr>
+														</thead>
+														<tbody *ngFor="let ultrasonico of ultrasonicos">
+															<!-- <td>{{ultrasonico.id}}</td> -->
+															<td>{{ultrasonico.Distancia | number}}CM</td>
+															<td>{{ultrasonico.Fecha}}</td>
+															<td>{{ultrasonico.Hora}}</td>
+
+															<!-- <td><button type="button"  class="btn btn-outline-danger" (click)="delete(ultrasonico.id)"><a><i class="fas fa-solid fa-trash"></i></a></button></td> -->
+
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-gradient-success btn-block mb-6"(click)="exportExcel()">
+											Descargar En Excel</button>
+									</div>
+
+
+								</div>
+								<!-- sessions-section end -->
+								<div class="col-md-6 col-xl-4">
+									<div class="card user-card">
+										<div class="card-header">
+											<h5>Sensor Ultrasonico</h5>
+										</div>
+										<div class="card-body  text-center">
+											<div class="usre-image">
+												<img src="/assets/images/user/ultra.png" class="img-radius wid-100 m-auto" alt="User-Profile-Image">
+											</div>
+
+
+											<hr>
+											<p class="m-t-15">Como su nombre lo indica, los sensores ultrasónicos miden la distancia mediante el uso de ondas ultrasónicas. El cabezal emite una onda ultrasónica y recibe la onda reflejada que retorna desde el objeto. Los sensores ultrasónicos miden la distancia al objeto contando el tiempo entre la emisión y la recepción.</p>
+											<hr>
+											<h5>Redes Sociales:</h5>
+											<div class="row justify-content-center user-social-link">
+												<div class="col-auto"><a href="https://www.facebook.com/frelldevs341/?ref=pages_you_manage"><i class="fab fa-facebook-f text-primary f-22"></i></a></div>
+												<div class="col-auto"><a href="https://www.youtube.com/channel/UCCjFL4SN7xPMaVO-acgO2JQ"><i class="fab fa-youtube text-c-info f-22"></i></a></div>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>
