@@ -14,8 +14,7 @@ Creación del proyecto frontend de sensorbox, una aplicación web que administa 
 
 [SENSORBOX](https://sensorbox-3abec.web.app/login "DASHBOARD")
 
-> Actualmente la aplicación no esta en funcionamiento para ser accedido
-> quizas en un futuro lo este...
+> Actualmente la aplicación no esta en funcionamiento para ser accedido, quizas en algun futuro lo este...
 
 # Angular application
 
