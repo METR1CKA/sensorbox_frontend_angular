@@ -1,4 +1,18 @@
-# Pipes
+# Sensorbox
+
+FRELLDEVS
+
+## Dashboard
+
+* FRONTEND
+
+## Descripción
+
+Creación del proyecto frontend de sensorbox, una aplicación web que administa mediante el dashboard la configuración y manejo de datos
+
+# Angular application
+
+## Pipes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
