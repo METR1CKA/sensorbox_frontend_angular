@@ -10,6 +10,13 @@ FRELLDEVS
 
 Creación del proyecto frontend de sensorbox, una aplicación web que administa mediante el dashboard la configuración y manejo de datos
 
+## Link
+
+[SENSORBOX](https://sensorbox-3abec.web.app/login "DASHBOARD")
+
+> Actualmente la aplicación no esta en funcionamiento para ser accedido
+> quizas en un futuro lo este...
+
 # Angular application
 
 ## Pipes
